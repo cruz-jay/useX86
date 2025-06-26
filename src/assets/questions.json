@@ -1,0 +1,85 @@
+{
+  "questions": [
+    {
+      "question": "What is the relationship between machine code and assembly language?",
+      "options": [
+        "Assembly language is a programming language.",
+        "One way: assembly language is converted to machine language.",
+        "One-to-one.",
+        "No relationship."
+      ],
+      "correctOption": [2],
+      "points": 10
+    },
+    {
+      "question": "Which of the following is included in the rax register? Check all that apply.",
+      "options": ["eax", "ah", "ax", "al", "bl"],
+      "correctOption": [0, 1, 2, 3],
+      "points": 10
+    },
+    {
+      "question": "How many bits does the rax register have?",
+      "options": [32, 64, 16, 8],
+      "correctOption": [1],
+      "points": 10
+    },
+    {
+      "question": "How many bits does the eax register have?",
+      "options": [64, 8, 32, 16],
+      "correctOption": [2],
+      "points": 10
+    },
+    {
+      "question": "How many bits does the ax register have?",
+      "options": [64, 8, 32, 16],
+      "correctOption": [3],
+      "points": 10
+    },
+    {
+      "question": "If al is set to 0x05 and ax is set to 0x00000020, and rax is set to 0x0000000000000000, show the final complete content of the complex rax register.",
+      "options": [
+        "0x0000000000000005",
+        "0x0000000000000001",
+        "0x0000000000000020",
+        "0x0000000000000000"
+      ],
+      "correctOption": [3],
+      "points": 10
+    },
+    {
+      "question": "What does the rip register refer to?",
+      "options": [
+        "Used to access data stored on the stack.",
+        "Points to the next instruction to be executed.",
+        "This is not a current valid register.",
+        "Points to the current top of the stack."
+      ],
+      "correctOption": [1],
+      "points": 10
+    },
+    {
+      "question": "What does the rsp register refer to?",
+      "options": [
+        "This is not a current valid register.",
+        "Points to the current top of the stack.",
+        "Points to the next instruction to be executed.",
+        "Used to access data stored on the stack."
+      ],
+      "correctOption": [1],
+      "points": 10
+    },
+    {
+      "question": "Which of the following are components of the Von Neumann Architecture?",
+      "options": [
+        "Peripheral devices (screen, keyboard, mouse).",
+        "CPU",
+        "Bus",
+        "Primary Storage/Memory",
+        "Secondary Storage",
+        "Power Cable"
+      ],
+      "correctOption": [0, 1, 2, 3, 4],
+      "points": 10
+    }
+  ]
+}
