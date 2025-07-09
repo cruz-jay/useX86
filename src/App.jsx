@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
 import Layout from "./routes/Layout";
 import Home from "./routes/Home";
-import Scores from "./routes/Scores";
+import ErrorElement from "./routes/ErrorElement";
+import NotFoundPage from "./routes/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -10,14 +11,15 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "",
+        index: true,
         element: <Home />,
       },
       {
-        path: "scores",
-        element: <Scores />,
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
+    errorElement: <ErrorElement />,
   },
 ]);
 

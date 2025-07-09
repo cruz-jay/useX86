@@ -16,9 +16,6 @@ const Header = () => {
               <Link to="/">
                 <h1>x86 Assembly Quiz</h1>
               </Link>
-              <div>
-                <span>University of Nevada, Las Vegas</span>
-              </div>
             </div>
           </div>
         </div>

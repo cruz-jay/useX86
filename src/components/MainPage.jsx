@@ -12,8 +12,7 @@ const MainPage = () => {
   return (
     <div>
       <h3>
-        <span></span> questions to test your knowledge on
-        <span>x86 Assembly</span>
+        <span></span> Questions To Test Your Knowledge On x86 Assembly
       </h3>
       <button onClick={handleClick}>
         <span>Let's Start</span>

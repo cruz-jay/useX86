@@ -12,7 +12,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <h4>{question.question}</h4>
+      <h4 id="#questions">{question.question}</h4>
       <Options />
     </div>
   );

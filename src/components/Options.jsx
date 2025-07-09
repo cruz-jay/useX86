@@ -35,14 +35,18 @@ const Options = () => {
   return (
     <div>
       <div>
-        {question.options.map((option, index) => (
-          <button
-            key={option}
-            disabled={hasAnswered}
-            onClick={() => handleAnswer(index)}>
-            {option}
-          </button>
-        ))}
+        <ul>
+          {question.options.map((option, index) => (
+            <li>
+              <button
+                key={option}
+                disabled={hasAnswered}
+                onClick={() => handleAnswer(index)}>
+                {option}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {isMultipleChoice && !hasAnswered && selectedOptions.length > 0 && (

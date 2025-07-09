@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import useQuizStore from "../store/store";
 
 const Finished = ({ maxPoints }) => {
@@ -11,10 +10,6 @@ const Finished = ({ maxPoints }) => {
   function redo() {
     quizReset();
   }
-  const navigate = useNavigate();
-  const handleRedirect = () => {
-    navigate("/scores");
-  };
 
   return (
     <div>
@@ -28,7 +23,6 @@ const Finished = ({ maxPoints }) => {
       </div>
       <div>
         <button onClick={redo}>Try Another Quiz</button>
-        <button onClick={handleRedirect}>See Data</button>
       </div>
     </div>
   );
