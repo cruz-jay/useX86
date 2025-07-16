@@ -34,11 +34,12 @@ const Options = () => {
 
   return (
     <div>
-      <div>
+      <div className="pt-5">
         <ul>
           {question.options.map((option, index) => (
             <li>
               <button
+                className="button-a"
                 key={option}
                 disabled={hasAnswered}
                 onClick={() => handleAnswer(index)}>
@@ -50,7 +51,9 @@ const Options = () => {
       </div>
 
       {isMultipleChoice && !hasAnswered && selectedOptions.length > 0 && (
-        <button onClick={handleSubmit}>Submit Answers</button>
+        <button className="button-a" onClick={handleSubmit}>
+          Submit Answers
+        </button>
       )}
     </div>
   );

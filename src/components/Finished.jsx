@@ -22,7 +22,9 @@ const Finished = ({ maxPoints }) => {
         <p>{message}</p>
       </div>
       <div>
-        <button onClick={redo}>Try Another Quiz</button>
+        <button className="button-a" onClick={redo}>
+          Try Again
+        </button>
       </div>
     </div>
   );

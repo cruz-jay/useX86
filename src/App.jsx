@@ -4,6 +4,7 @@ import Layout from "./routes/Layout";
 import Home from "./routes/Home";
 import ErrorElement from "./routes/ErrorElement";
 import NotFoundPage from "./routes/NotFoundPage";
+import AboutPage from "./routes/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       },
     ],
     errorElement: <ErrorElement />,
+  },
+  {
+    path: "about",
+    element: <AboutPage />,
   },
 ]);
 

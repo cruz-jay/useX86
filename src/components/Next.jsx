@@ -19,7 +19,9 @@ const Next = ({ numQuestions }) => {
 
   return (
     <div>
-      <button onClick={isLastQuestion ? handleFinished : handleNext}>
+      <button
+        className="button-a"
+        onClick={isLastQuestion ? handleFinished : handleNext}>
         {isLastQuestion ? "Finish Quiz" : "Next Question"}
         <svg
           xmlns="http://www.w3.org/2000/svg"
